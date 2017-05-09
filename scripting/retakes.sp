@@ -530,7 +530,7 @@ public Action Event_DamageDealt(Handle event, const char[] name, bool dontBroadc
     bool validVictim = IsValidClient(victim);
 
     if (validAttacker && validVictim && HelpfulAttack(attacker, victim) ) {
-        int damage = GetEventInt(event, "dmg_PlayerHealth");
+        int damage = GetEventInt(event, "dmg_health");
         g_RoundPoints[attacker] += (damage * POINTS_DMG);
     }
     return Plugin_Continue;
