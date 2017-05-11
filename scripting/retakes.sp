@@ -533,7 +533,7 @@ public Action Event_DamageDealt(Handle event, const char[] name, bool dontBroadc
         int damage = GetEventInt(event, "dmg_health");
         int health = GetEventInt(event, "health");
 
-        if (health < 0) damage -= health;
+        if (health < 0) damage += health;
 
         g_RoundPoints[attacker] += (damage * POINTS_DMG);
     }
