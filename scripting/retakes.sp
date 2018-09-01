@@ -344,7 +344,7 @@ public Action OnClientSayCommand(int client, const char[] command, const char[] 
         return Plugin_Continue;
     }
 
-    static char gunsChatCommands[][] = { "gun", "guns", ".gun", ".guns", "!gun", "gnus", "egg", "eggs" };
+    static char gunsChatCommands[][] = { "gun", "guns", ".gun", ".guns", "!gun", "gnus", "egg", "eggs", ".egg", ".eggs", "!egg", "!eggs" };
     for (int i = 0; i < sizeof(gunsChatCommands); i++) {
         if (strcmp(args[0], gunsChatCommands[i], false) == 0) {
             Call_StartForward(g_hOnGunsCommand);
