@@ -1,3 +1,5 @@
 *.zip
 *.smx
 builds
+.vscode/tasks.json
+scripting/build.bat
